@@ -16,7 +16,7 @@ for (let i = 0; i < Math.floor(Math.random() * 10 + 1); i++) {
 // 获取角色列表
 export function list () {
   return {
-    // isOpen: false,
+    isOpen: true,
     url: '/sys/role/list',
     type: 'get',
     data: {
@@ -36,7 +36,7 @@ export function list () {
 // 获取角色列表, 根据当前用户
 export function select () {
   return {
-    // isOpen: false,
+    isOpen: true,
     url: '/sys/role/select',
     type: 'get',
     data: {
@@ -50,7 +50,7 @@ export function select () {
 // 获取角色信息
 export function info () {
   return {
-    // isOpen: false,
+    isOpen: true,
     url: '/sys/role/info',
     type: 'get',
     data: {
@@ -64,7 +64,7 @@ export function info () {
 // 添加角色
 export function add () {
   return {
-    // isOpen: false,
+    isOpen: true,
     url: '/sys/role/save',
     type: 'post',
     data: {
@@ -77,7 +77,7 @@ export function add () {
 // 修改角色
 export function update () {
   return {
-    // isOpen: false,
+    isOpen: true,
     url: '/sys/role/update',
     type: 'post',
     data: {
@@ -90,7 +90,7 @@ export function update () {
 // 删除角色
 export function del () {
   return {
-    // isOpen: false,
+    isOpen: true,
     url: '/sys/role/delete',
     type: 'post',
     data: {

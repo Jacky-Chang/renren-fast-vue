@@ -502,7 +502,7 @@ var navDataList = [
 // 获取导航菜单列表 / 权限
 export function nav () {
   return {
-    // isOpen: false,
+    isOpen: true,
     url: '/sys/menu/nav',
     type: 'get',
     data: {
@@ -551,7 +551,7 @@ export function nav () {
 // 获取菜单列表
 export function list () {
   return {
-    // isOpen: false,
+    isOpen: true,
     url: '/sys/menu/list',
     type: 'get',
     data: dataList
@@ -563,7 +563,7 @@ export function select () {
   let dataList = JSON.parse(JSON.stringify(navDataList))
   dataList = dataList.concat(dataList[0].list)
   return {
-    // isOpen: false,
+    isOpen: true,
     url: '/sys/menu/select',
     type: 'get',
     data: {
@@ -577,7 +577,7 @@ export function select () {
 // 获取菜单信息
 export function info () {
   return {
-    // isOpen: false,
+    isOpen: true,
     url: '/sys/menu/info',
     type: 'get',
     data: {
@@ -591,7 +591,7 @@ export function info () {
 // 添加菜单
 export function add () {
   return {
-    // isOpen: false,
+    isOpen: true,
     url: '/sys/menu/save',
     type: 'post',
     data: {
@@ -604,7 +604,7 @@ export function add () {
 // 修改菜单
 export function update () {
   return {
-    // isOpen: false,
+    isOpen: true,
     url: '/sys/menu/update',
     type: 'post',
     data: {
@@ -617,7 +617,7 @@ export function update () {
 // 删除菜单
 export function del () {
   return {
-    // isOpen: false,
+    isOpen: true,
     url: '/sys/menu/delete',
     type: 'post',
     data: {

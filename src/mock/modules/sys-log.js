@@ -33,7 +33,7 @@ for (let i = 0; i < Math.floor(Math.random() * 10 + 1); i++) {
 // 获取日志列表
 export function list () {
   return {
-    // isOpen: false,
+    isOpen: true,
     url: '/sys/log/list',
     type: 'get',
     data: {
@@ -53,7 +53,7 @@ export function list () {
 // 获取定时任务日志列表
 export function scheduleList () {
   return {
-    // isOpen: false,
+    isOpen: true,
     url: '/sys/scheduleLog/list',
     type: 'get',
     data: {
@@ -74,7 +74,7 @@ export function scheduleList () {
 export function scheduleInfo () {
   let name = Mock.Random.name()
   return {
-    // isOpen: false,
+    isOpen: true,
     url: '/sys/scheduleLog/info',
     type: 'get',
     data: {

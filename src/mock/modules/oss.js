@@ -13,7 +13,7 @@ for (let i = 0; i < Math.floor(Math.random() * 10 + 1); i++) {
 // 获取文件列表
 export function list () {
   return {
-    // isOpen: false,
+    isOpen: true,
     url: '/sys/oss/list',
     type: 'get',
     data: {
@@ -33,7 +33,7 @@ export function list () {
 // 获取云存储配置信息
 export function config () {
   return {
-    // isOpen: false,
+    isOpen: true,
     url: '/sys/oss/config',
     type: 'get',
     data: {
@@ -67,7 +67,7 @@ export function config () {
 // 保存云存储配置信息
 export function addConfig () {
   return {
-    // isOpen: false,
+    isOpen: true,
     url: '/sys/oss/saveConfig',
     type: 'post',
     data: {
@@ -80,7 +80,7 @@ export function addConfig () {
 // 删除文件
 export function del () {
   return {
-    // isOpen: false,
+    isOpen: true,
     url: '/sys/oss/delete',
     type: 'post',
     data: {
